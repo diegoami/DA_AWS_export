@@ -1,0 +1,451 @@
+    1  ls -rtl
+    2  sudo apt-get update
+    3  sudo apt-get -y dist-upgrade
+    4  sudo apt-get install -y gcc g++ gfortran build-essential git wget linux-image-generic libopenblas-dev python-dev python-pip python-nose python-numpy python-scipy
+    5  sudo apt-get update -y
+    6  sudo apt-get upgrade -y linux-aws
+    7  sudo apt-get install -y gcc linux-headers-$(uname -r)
+    8  mkdir downloads
+    9  cd downloads/
+   10  wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+   11  sudo dpkg -i cuda-repo-ubuntu1604_8.0.61-1_amd64.deb
+   12  sudo apt-get update
+   13  sudo apt-get install cuda
+   14  sudo reboot
+   15  ls
+   16  cd downloads/
+   17  wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+   18  ls
+   19  chmod u+x Anaconda3-4.4.0-Linux-x86_64.sh 
+   20  ./Anaconda3-4.4.0-Linux-x86_64.sh 
+   21  conda create -n dsretreat
+   22  source .bashrc
+   23  source ~/.bashrc
+   24  conda create -n dsretreat
+   25  source activate dsretreat
+   26  conda install numpy pandas scikit-learn scipy
+   27  cuda install tensorflow-gpu
+   28  conda install tensorflow-gpu
+   29  python
+   30  conda install kears
+   31  conda install keras
+   32  python
+   33  conda uninstall tensorflow
+   34  pip install keras
+   35  python
+   36  conda install tensorflow-gpu
+   37  conda uninstall tensorflow-gpu
+   38  conda install tensorflow-gpu
+   39  source activate root
+   40  source activate dsretreat
+   41  python
+   42  ls
+   43  conda create -n dsretreat-2
+   44  source activate dsretreat-2
+   45  conda install tensorflow-gpu
+   46  python
+   47  pip install keras
+   48  python
+   49  cd
+   50  cd .ssh
+   51  ssh-keygen -t rsa
+   52  ls
+   53  cat id_rsa.pub 
+   54  cd
+   55  mkdir projects
+   56  cd projects
+   57  git clone git@github.com:diegoami/DA_dsretreat.git
+   58  cd deeplearning
+   59  cd DA_dsretreat/
+   60  cd deeplearning/
+   61  ls
+   62  conda install jupyter
+   63  python
+   64  ls
+   65  jupyter notebook 
+   66  jupyter notebook --port 9999
+   67  ls
+   68  jupyter notebook 
+   69  ls
+   70  cd ..
+   71  ls
+   72  ls -la
+   73  cd deeplearning/
+   74  ls
+   75  ls -la
+   76  jupyter notebook 
+   77  chmod . -R a+w 
+   78  chmod a+w . -R
+   79  ls
+   80  ls -la
+   81  jupyter notebook 
+   82  cd ..
+   83  ls
+   84  ls -la
+   85  cd ..
+   86  ls
+   87  ls -la
+   88  chmod a+w -R DA_dsretreat/
+   89  ls
+   90  jupyter notebook
+   91  bg
+   92  curl http://localhost:8888/?token=142032f9ffca6562c1f759885d348f9c1678936c775f212d
+   93  ls
+   94  cd
+   95  wget http://localhost:8888/?token=142032f9ffca6562c1f759885d348f9c1678936c775f212d
+   96  ls
+   97  cat index.html\?token\=142032f9ffca6562c1f759885d348f9c1678936c775f212d 
+   98  vi index.html\?token\=142032f9ffca6562c1f759885d348f9c1678936c775f212d 
+   99  fg
+  100  ls
+  101  rm index.html\?token\=142032f9ffca6562c1f759885d348f9c1678936c775f212d 
+  102  cd projects/
+  103  ls
+  104  cd DA_dsretreat/
+  105  ls
+  106  lynx
+  107  sudo apt install lynx
+  108  cd deeplearning/
+  109  ls
+  110  jupyter notebook
+  111  jupyter notebook &
+  112  fg
+  113  jupyter -- runtime-dir
+  114  jupyter --runtime-dir
+  115  source activate root
+  116  exit
+  117  ls
+  118  cd projects/
+  119  ls
+  120  cd DA_dsretreat/
+  121  source activate dsretreat-2
+  122  jupyter notebook
+  123  ipython
+  124  cd deeplearning/
+  125  jupyter notebook
+  126  jupyter notebook --port 80
+  127  source activate root
+  128  conda install jupyter
+  129  jupyter notebook
+  130  exit
+  131  deviceQuery
+  132  echo "export PATH=/usr/local/cuda-6.5/bin:$PATH" >> .bashrc
+  133  echo "export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH" >> .bashrc
+  134  source ~/.bashrc
+  135  deviceQuery
+  136  echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH" >> .bashrc
+  137  echo "export PATH=/usr/local/cuda-8.0/bin:$PATH" >> .bashrc
+  138  source ~/.bashrc
+  139  deviceQuery
+  140  ls /usr/local/cuda-8.0/bin
+  141  nvcc
+  142  cd downloads/
+  143  ls
+  144  lspci | grep -i nvidia
+  145  uname -r
+  146  sudo apt-get install linux-headers-$(uname -r)
+  147  cd
+  148  mkdir cuda
+  149  cuda-install-samples-8.0.sh
+  150  cuda-install-samples-8.0.sh ~/cuda
+  151  cd cuda
+  152  ls
+  153  cd NVIDIA_CUDA-8.0_Samples/
+  154  ls
+  155  cat /proc/driver/nvidia/version
+  156  nvcc
+  157  make
+  158  ls
+  159  cd bin
+  160  ls
+  161  cd x86_64/
+  162  ls
+  163  cd linux/
+  164  ls
+  165  cd release/
+  166  ls
+  167  ./deviceQuery
+  168  cd
+  169  ls
+  170  mkdir projects
+  171  ls
+  172  mkdir .ssh
+  173  cd .ssh
+  174  ls
+  175  vi id_rsa
+  176  vi id_rsa.pub
+  177  rm id_rsa.pub
+  178  ls
+  179  rm id_rssa
+  180  rm id_rsa
+  181  nvidia-smi
+  182  lynx  http://localhost:8888/?token=65805d2880c2b944b3501221811372e6ba4e72462fe75719
+  183  cd
+  184  mkdir test
+  185  cd test
+  186  wget  http://localhost:8888/?token=65805d2880c2b944b3501221811372e6ba4e72462fe75719
+  187  pwd
+  188  ls -rtl
+  189  cd projects/
+  190  ls
+  191  cd DA_dsretreat/
+  192  cd deeplearning/
+  193  jupyter notebook
+  194  ls
+  195  cd projects/
+  196  ls
+  197  cd DA_dsretreat/
+  198  source activate DA_dsretreat
+  199  source activate dsretreat-2
+  200  ls
+  201  jupyter notebook
+  202  ls
+  203  cd deeplearning/
+  204  ls
+  205  cd ../
+  206  mkdir deeplearning_normal
+  207  cd deeplearning_normal/
+  208  ls
+  209  vi first.py
+  210  source activate PIL
+  211  conda install PIL
+  212  conda install pillow
+  213  vi first.py
+  214  python first.py 
+  215  vi first.py
+  216  python first.py 
+  217  conda install sklearn
+  218  conda install sklearn-scipy
+  219  conda install scikit
+  220  conda install scikit-learn
+  221  ls
+  222  mkdir preprocessing
+  223  mv first.py preprocessing/
+  224  vi first.py
+  225  cd preprocessing/
+  226  vi first.py 
+  227  python first.py 
+  228  ls ~/datasets/UECFOOD100/1/bb_info.txt 
+  229  python first.py 
+  230  vi first.py 
+  231  pyton first.py 
+  232  python first.py 
+  233  vi second.py
+  234  python second.py
+  235  vi second.py
+  236  python second.py
+  237  cd ..
+  238  mkdir handson
+  239  cd handson
+  240  ls
+  241  vi first.py
+  242  python first.py 
+  243  vi first.py
+  244  python first.py 
+  245  vi first.py
+  246  python first.py 
+  247  vi first.py
+  248  python first.py 
+  249  conda install h5py
+  250  cp first.py second.py
+  251  vi second.py
+  252  python second.py
+  253  ls
+  254  vi second.py 
+  255  python second.py
+  256  vi second.py 
+  257  python second.py
+  258  vi second.py 
+  259  nohup python second.py &
+  260  ls
+  261  tail -f nohup.out 
+  262  ls
+  263  ls -la
+  264  cd ..
+  265  mkdir experiments
+  266  tail -f handson/nohup.out 
+  267  cd ..
+  268  ls
+  269  ls 
+  270  cd deeplearning
+  271  ls
+  272  cd ..
+  273  ls
+  274  cd deeplearning_normal/
+  275  ls
+  276  git status
+  277  cd ..
+  278  git status
+  279  git add deeplearning_normal/
+  280  git status
+  281  git commit -a
+  282  git push origin master
+  283  ls
+  284  cd deeplearning
+  285  ls
+  286  cd ..
+  287  ls
+  288  cd deeplearning_normal/
+  289  ls -rtl
+  290  cd experiments/
+  291  ls -rtl
+  292  vi first.py
+  293  python first.py
+  294  ls
+  295  vi first.py
+  296  python first.py
+  297  vi second.py
+  298  ls -rtl
+  299  cd ../
+  300  ls
+  301  tail -f handson/nohup.out 
+  302  cd ..
+  303  ;s
+  304  ls -rtl
+  305  cd deeplearning
+  306  ls
+  307  cd ../deeplearning_normal/
+  308  ls
+  309  cd experiments/
+  310  ls
+  311  vi second.py 
+  312  cd ..
+  313  ls
+  314  cd handson
+  315  tail -f nohup.out 
+  316  l
+  317  ls
+  318  cd
+  319  git status
+  320  cd projects/
+  321  ld
+  322  ls
+  323  cd DA_dsretreat/
+  324  ls
+  325  cd deeplearning_normal/
+  326  ls -rtl
+  327  cd ..
+  328  git status
+  329  git add *
+  330  git commit -a
+  331  git push origin master
+  332  exit
+  333  cd data
+  334  mkdir data
+  335  ls
+  336  cd data
+  337  wget http://foodcam.mobi/dataset100.zip
+  338  cd ..
+  339  mv data datasets
+  340  cd datasets
+  341  ls
+  342  unzip dataset100.zip 
+  343  sudo apt install unzip
+  344  unzip dataset100.zip 
+  345  unzip dataset100.zip l
+  346  pwd
+  347  ls
+  348  cd UECFOOD100/
+  349  pwd
+  350  ls
+  351  ls 1
+  352  cd ..
+  353  cd
+  354  cd data
+  355  ls
+  356  cd deeplearning/
+  357  cd data
+  358  ls
+  359  pwd
+  360  cd 
+  361  mkdir models
+  362  cd models
+  363  mkdir food
+  364  cd
+  365  cd data
+  366  ls
+  367  cd deeplearning/
+  368  ls
+  369  cd data
+  370  ls
+  371  cd train
+  372  pwd
+  373  ls
+  374  cd ..
+  375  mv data food
+  376  cd food
+  377  nvidia-smi
+  378  cd ..
+  379  ls
+  380  cd ..
+  381  ls
+  382  cd ..
+  383  ls
+  384  mkdir datasets
+  385  cd datasets
+  386  nestat -tulp
+  387  netstat -tulp
+  388  apache
+  389  apache2
+  390  nvidia-smi
+  391  ls
+  392  rm dataset100.zip 
+  393  mkdir MNIST_data
+  394  pwd
+  395  cd MNIST_data/
+  396  pwd
+  397  ls
+  398  gunzip train-images-idx3-ubyte.gz 
+  399  ls
+  400  tar xvf train-images-idx3-ubyte
+  401  ls
+  402  ls train-images-idx3-ubyte 
+  403  ls -la train-images-idx3-ubyte 
+  404  rm ?
+  405  rm *
+  406  y
+  407  cd
+  408  ls
+  409  cd data
+  410  ls
+  411  cd ../mode,s
+  412  cd ../models
+  413  ls -rtl
+  414  mkdir mnist
+  415  nvidia-smi
+  416  ls
+  417  cd ..
+  418  ls
+  419  cd datasets
+  420  ls
+  421  sudo apt-get install vim
+  422  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  423  touch ~/.vimrc
+  424  ls
+  425  ls models
+  426  cd ..
+  427  ls models
+  428  ls -rtl
+  429  cd models
+  430  ls -rtl
+  431  ls food
+  432  ls -la food
+  433  exit
+  434  cd projects/
+  435  ls
+  436  cd DA_dsretreat/
+  437  pwd
+  438  git status
+  439  pwd
+  440  ls
+  441  cd deeplearning_normal/
+  442  ls
+  443  cd
+  444  mkdir export
+  445  ls
+  446  cd export
+  447  ls -rtl
+  448  datetime
+  449  time
+  450  date
+  451  history > history_21_09_2017.txt
